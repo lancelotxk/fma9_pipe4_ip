@@ -1,0 +1,80 @@
+ 
+****************************************
+Report : resources
+Design : fpfma_pipeline
+Version: P-2019.03-SP5-4
+Date   : Sun Apr 25 11:35:14 2021
+****************************************
+
+Resource Sharing Report for design fpfma_pipeline in file
+        ../src/verilog/fpfma_pipeline.v
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r376     | DW02_multp   | a_width=24 |               | multp_1              |
+|          |              | b_width=24 |               |                      |
+|          |              | out_width=50 |             |                      |
+|          |              | verif_en=1 |               |                      |
+| r378     | DW02_multp   | a_width=24 |               | multp_2              |
+|          |              | b_width=24 |               |                      |
+|          |              | out_width=50 |             |                      |
+|          |              | verif_en=1 |               |                      |
+| r380     | DW02_multp   | a_width=24 |               | multp_3              |
+|          |              | b_width=24 |               |                      |
+|          |              | out_width=50 |             |                      |
+|          |              | verif_en=1 |               |                      |
+| r382     | DW02_multp   | a_width=24 |               | multp_4              |
+|          |              | b_width=24 |               |                      |
+|          |              | out_width=50 |             |                      |
+|          |              | verif_en=1 |               |                      |
+| r384     | DW02_multp   | a_width=24 |               | multp_5              |
+|          |              | b_width=24 |               |                      |
+|          |              | out_width=50 |             |                      |
+|          |              | verif_en=1 |               |                      |
+| r386     | DW02_multp   | a_width=24 |               | multp_6              |
+|          |              | b_width=24 |               |                      |
+|          |              | out_width=50 |             |                      |
+|          |              | verif_en=1 |               |                      |
+| r388     | DW02_multp   | a_width=24 |               | multp_7              |
+|          |              | b_width=24 |               |                      |
+|          |              | out_width=50 |             |                      |
+|          |              | verif_en=1 |               |                      |
+| r390     | DW02_multp   | a_width=24 |               | multp_8              |
+|          |              | b_width=24 |               |                      |
+|          |              | out_width=50 |             |                      |
+|          |              | verif_en=1 |               |                      |
+| r392     | DW02_multp   | a_width=24 |               | multp_9              |
+|          |              | b_width=24 |               |                      |
+|          |              | out_width=50 |             |                      |
+|          |              | verif_en=1 |               |                      |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| multp_1            | DW02_multp       | apparch (area)     |                |
+|                    |                  | mult_arch: benc_radix8              |
+| multp_2            | DW02_multp       | apparch (area)     |                |
+|                    |                  | mult_arch: benc_radix8              |
+| multp_3            | DW02_multp       | apparch (area)     |                |
+|                    |                  | mult_arch: benc_radix8              |
+| multp_4            | DW02_multp       | apparch (area)     |                |
+|                    |                  | mult_arch: benc_radix8              |
+| multp_5            | DW02_multp       | apparch (area)     |                |
+|                    |                  | mult_arch: benc_radix8              |
+| multp_6            | DW02_multp       | apparch (area)     |                |
+|                    |                  | mult_arch: benc_radix8              |
+| multp_7            | DW02_multp       | apparch (area)     |                |
+|                    |                  | mult_arch: benc_radix8              |
+| multp_8            | DW02_multp       | apparch (area)     |                |
+|                    |                  | mult_arch: benc_radix8              |
+| multp_9            | DW02_multp       | apparch (area)     |                |
+|                    |                  | mult_arch: benc_radix8              |
+===============================================================================
+
+1

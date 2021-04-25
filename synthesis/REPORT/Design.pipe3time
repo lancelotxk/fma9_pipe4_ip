@@ -1,0 +1,167 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fpfma_pipeline
+Version: P-2019.03-SP5-4
+Date   : Sun Apr 25 11:35:58 2021
+****************************************
+
+Operating Conditions: ssg0p9v0c   Library: tcbn28hpcplusbwp12t30p140ssg0p9v0c
+Wire Load Model Mode: segmented
+
+  Startpoint: pipe2/pad_man_carry_p2_reg[0]/CP
+              (internal path startpoint clocked by clk_DQS)
+  Endpoint: pipe3/man_abc_pre_p3_reg[71]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_reg_pipeline4
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline4      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline3      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline1      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_902    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compressor3_2_group
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  CLA_adder_WIDTH40  ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  carry_select_adder ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                               0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  input external delay                                    0.00       0.00 r
+  pipe2/pad_man_carry_p2_reg[0]/CP (DFCNQOPTMAD8BWP12T30P140)
+                                                          0.00       0.00 r
+  pipe2/pad_man_carry_p2_reg[0]/Q (DFCNQOPTMAD8BWP12T30P140)
+                                                          0.03       0.03 r
+  pipe2/pad_man_carry_p2[0] (reg_pipeline2)               0.00       0.03 r
+  compress_group/in2[0] (compressor3_2_group) <-          0.00       0.03 r
+  compress_group/genblk1[0].compress/in[1] (compress3_2_902)
+                                                          0.00       0.03 r
+  compress_group/genblk1[0].compress/U8/Z (XOR2OPTND6BWP12T30P140)
+                                                          0.02       0.05 f
+  compress_group/genblk1[0].compress/U9/ZN (ND2D4BWP12T30P140)
+                                                          0.01       0.06 r
+  compress_group/genblk1[0].compress/U11/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.06 f
+  compress_group/genblk1[0].compress/s (compress3_2_902)
+                                                          0.00       0.06 f
+  compress_group/s[0] (compressor3_2_group) <-            0.00       0.06 f
+  ADD_CSA/A[0] (carry_select_adder)                       0.00       0.06 f
+  ADD_CSA/CLA1/A[0] (CLA_adder_WIDTH40)                   0.00       0.06 f
+  ADD_CSA/CLA1/U228/ZN (MAOI222D1BWP12T30P140)            0.02       0.08 r
+  ADD_CSA/CLA1/U59/ZN (CKND2BWP12T30P140)                 0.01       0.09 f
+  ADD_CSA/CLA1/U86/ZN (AOI22OPTPBD2BWP12T30P140)          0.02       0.11 r
+  ADD_CSA/CLA1/U132/ZN (CKND2D4BWP12T30P140)              0.01       0.12 f
+  ADD_CSA/CLA1/U193/ZN (AOI22OPTPBD2BWP12T30P140)         0.01       0.13 r
+  ADD_CSA/CLA1/U229/ZN (INR2D4BWP12T30P140)               0.02       0.15 r
+  ADD_CSA/CLA1/U191/ZN (OAI22OPTPBD2BWP12T30P140)         0.01       0.16 f
+  ADD_CSA/CLA1/U235/Z (OR2D4BWP12T30P140)                 0.02       0.18 f
+  ADD_CSA/CLA1/U96/ZN (IOA22D2BWP12T30P140)               0.02       0.20 f
+  ADD_CSA/CLA1/U95/ZN (NR2OPTPAD2BWP12T30P140)            0.01       0.21 r
+  ADD_CSA/CLA1/U251/ZN (OAI22OPTPBD2BWP12T30P140)         0.01       0.22 f
+  ADD_CSA/CLA1/U245/Z (OR2D4BWP12T30P140)                 0.02       0.24 f
+  ADD_CSA/CLA1/U225/ZN (AOI22OPTPBD2BWP12T30P140)         0.01       0.25 r
+  ADD_CSA/CLA1/U230/ZN (INR2D4BWP12T30P140)               0.02       0.27 r
+  ADD_CSA/CLA1/U224/ZN (OAI22OPTPBD2BWP12T30P140)         0.02       0.29 f
+  ADD_CSA/CLA1/U26/ZN (MAOI222D1BWP12T30P140)             0.02       0.31 r
+  ADD_CSA/CLA1/U209/Z (CKAN2D2BWP12T30P140)               0.02       0.33 r
+  ADD_CSA/CLA1/U215/ZN (OAI22OPTPBD2BWP12T30P140)         0.01       0.34 f
+  ADD_CSA/CLA1/U234/Z (OR2D4BWP12T30P140)                 0.02       0.36 f
+  ADD_CSA/CLA1/U116/ZN (AOI22OPTPBD4BWP12T30P140)         0.01       0.38 r
+  ADD_CSA/CLA1/U114/ZN (DCCKND4BWP12T30P140)              0.01       0.38 f
+  ADD_CSA/CLA1/U111/ZN (NR2OPTFAD4BWP12T30P140)           0.01       0.39 r
+  ADD_CSA/CLA1/U187/ZN (OAI22OPTPBD2BWP12T30P140)         0.01       0.40 f
+  ADD_CSA/CLA1/U243/Z (OR2D4BWP12T30P140)                 0.02       0.42 f
+  ADD_CSA/CLA1/U148/ZN (AOI22D1BWP12T30P140)              0.02       0.44 r
+  ADD_CSA/CLA1/U259/ZN (OAI22OPTPBD2BWP12T30P140)         0.02       0.46 f
+  ADD_CSA/CLA1/U32/ZN (MAOI222D1BWP12T30P140)             0.02       0.49 r
+  ADD_CSA/CLA1/U13/ZN (INVD1P25BWP12T30P140)              0.01       0.49 f
+  ADD_CSA/CLA1/U3/ZN (NR2OPTPAD2BWP12T30P140)             0.01       0.50 r
+  ADD_CSA/CLA1/U198/ZN (OAI22OPTPBD2BWP12T30P140)         0.01       0.52 f
+  ADD_CSA/CLA1/U244/Z (OR2D4BWP12T30P140)                 0.02       0.54 f
+  ADD_CSA/CLA1/U75/ZN (AOI22OPTPBD4BWP12T30P140)          0.01       0.55 r
+  ADD_CSA/CLA1/U70/ZN (CKND6BWP12T30P140)                 0.01       0.56 f
+  ADD_CSA/CLA1/U78/ZN (NR2OPTFAD4BWP12T30P140)            0.01       0.56 r
+  ADD_CSA/CLA1/U199/ZN (OAI22OPTPBD2BWP12T30P140)         0.01       0.58 f
+  ADD_CSA/CLA1/U233/Z (OR2D4BWP12T30P140)                 0.02       0.59 f
+  ADD_CSA/CLA1/U202/ZN (AOI22OPTPBD2BWP12T30P140)         0.01       0.61 r
+  ADD_CSA/CLA1/U258/ZN (INR2D4BWP12T30P140)               0.02       0.63 r
+  ADD_CSA/CLA1/U257/ZN (OAI22OPTPBD2BWP12T30P140)         0.01       0.64 f
+  ADD_CSA/CLA1/U240/Z (OR2D4BWP12T30P140)                 0.02       0.66 f
+  ADD_CSA/CLA1/U239/ZN (AOI22OPTPBD2BWP12T30P140)         0.01       0.67 r
+  ADD_CSA/CLA1/U152/ZN (DCCKND4BWP12T30P140)              0.01       0.68 f
+  ADD_CSA/CLA1/U173/ZN (INVD2BWP12T30P140)                0.01       0.68 r
+  ADD_CSA/CLA1/U174/ZN (OAI22OPTPBD2BWP12T30P140)         0.01       0.70 f
+  ADD_CSA/CLA1/U242/Z (OR2D4BWP12T30P140)                 0.02       0.72 f
+  ADD_CSA/CLA1/U232/ZN (AOI22OPTPBD2BWP12T30P140)         0.01       0.73 r
+  ADD_CSA/CLA1/U256/ZN (INR2D4BWP12T30P140)               0.02       0.75 r
+  ADD_CSA/CLA1/U255/ZN (OAI22OPTPBD2BWP12T30P140)         0.01       0.76 f
+  ADD_CSA/CLA1/U238/Z (OR2D4BWP12T30P140)                 0.02       0.78 f
+  ADD_CSA/CLA1/U168/ZN (AOI22D0BWP12T30P140)              0.02       0.80 r
+  ADD_CSA/CLA1/U250/ZN (OAI22OPTPBD2BWP12T30P140)         0.02       0.82 f
+  ADD_CSA/CLA1/U248/Z (OR2D4BWP12T30P140)                 0.02       0.84 f
+  ADD_CSA/CLA1/U150/ZN (AOI22OPTPBD4BWP12T30P140)         0.01       0.85 r
+  ADD_CSA/CLA1/U120/ZN (CKND6BWP12T30P140)                0.01       0.86 f
+  ADD_CSA/CLA1/U153/ZN (NR2OPTFAD4BWP12T30P140)           0.01       0.87 r
+  ADD_CSA/CLA1/U260/ZN (OAI22OPTPBD2BWP12T30P140)         0.01       0.88 f
+  ADD_CSA/CLA1/U231/Z (OR2D4BWP12T30P140)                 0.02       0.90 f
+  ADD_CSA/CLA1/U130/ZN (AOI22D1BWP12T30P140)              0.02       0.92 r
+  ADD_CSA/CLA1/U254/ZN (OAI22OPTPBD2BWP12T30P140)         0.02       0.94 f
+  ADD_CSA/CLA1/U237/Z (OR2D4BWP12T30P140)                 0.02       0.96 f
+  ADD_CSA/CLA1/U206/ZN (AOI22OPTPBD2BWP12T30P140)         0.01       0.97 r
+  ADD_CSA/CLA1/U24/ZN (DCCKND4BWP12T30P140)               0.01       0.98 f
+  ADD_CSA/CLA1/U22/ZN (NR2OPTFAD4BWP12T30P140)            0.01       0.99 r
+  ADD_CSA/CLA1/U38/ZN (OAI22OPTPBD2BWP12T30P140)          0.01       1.00 f
+  ADD_CSA/CLA1/U241/Z (OR2D4BWP12T30P140)                 0.02       1.02 f
+  ADD_CSA/CLA1/U42/ZN (ND2D0BWP12T30P140)                 0.01       1.02 r
+  ADD_CSA/CLA1/U46/ZN (CKND2D2BWP12T30P140)               0.01       1.03 f
+  ADD_CSA/CLA1/U54/ZN (NR2OPTPAD2BWP12T30P140)            0.01       1.04 r
+  ADD_CSA/CLA1/U127/Z (OA22D1BWP12T30P140)                0.03       1.07 r
+  ADD_CSA/CLA1/U188/ZN (CKND2BWP12T30P140)                0.01       1.08 f
+  ADD_CSA/CLA1/U142/ZN (AOI22OPTPBD4BWP12T30P140)         0.01       1.09 r
+  ADD_CSA/CLA1/U124/ZN (CKND6BWP12T30P140)                0.01       1.09 f
+  ADD_CSA/CLA1/U157/ZN (NR2OPTFAD4BWP12T30P140)           0.01       1.10 r
+  ADD_CSA/CLA1/U249/ZN (OAI22OPTPBD2BWP12T30P140)         0.01       1.11 f
+  ADD_CSA/CLA1/U247/Z (OR2D4BWP12T30P140)                 0.02       1.13 f
+  ADD_CSA/CLA1/U246/ZN (AOI22OPTPBD2BWP12T30P140)         0.01       1.15 r
+  ADD_CSA/CLA1/U252/ZN (INR2D4BWP12T30P140)               0.02       1.16 r
+  ADD_CSA/CLA1/U203/ZN (OAI22OPTPBD2BWP12T30P140)         0.01       1.18 f
+  ADD_CSA/CLA1/U253/Z (OR2D4BWP12T30P140)                 0.02       1.20 f
+  ADD_CSA/CLA1/U172/ZN (AOI22OPTPBD2BWP12T30P140)         0.01       1.21 r
+  ADD_CSA/CLA1/U30/ZN (CKND1BWP12T30P140)                 0.01       1.22 f
+  ADD_CSA/CLA1/U29/ZN (NR2OPTFAD4BWP12T30P140)            0.01       1.23 r
+  ADD_CSA/CLA1/U100/ZN (OAI22OPTPBD8BWP12T30P140)         0.02       1.25 f
+  ADD_CSA/CLA1/cout (CLA_adder_WIDTH40)                   0.00       1.25 f
+  ADD_CSA/U18/ZN (INVD12BWP12T30P140)                     0.01       1.26 r
+  ADD_CSA/U67/ZN (DCCKND4BWP12T30P140)                    0.01       1.28 f
+  ADD_CSA/U38/ZN (IOA22D1BWP12T30P140)                    0.02       1.30 r
+  ADD_CSA/S[71] (carry_select_adder)                      0.00       1.30 r
+  pipe3/man_abc_pre[71] (reg_pipeline3)                   0.00       1.30 r
+  pipe3/man_abc_pre_p3_reg[71]/D (DFCNQOPTSADD8BWP12T30P140)
+                                                          0.00       1.30 r
+  data arrival time                                                  1.30
+
+  clock clk_DQS (rise edge)                               1.25       1.25
+  clock network delay (propagated)                        0.02       1.27
+  pipe3/man_abc_pre_p3_reg[71]/CP (DFCNQOPTSADD8BWP12T30P140)
+                                                          0.00       1.27 r
+  library setup time                                      0.02       1.30
+  data required time                                                 1.30
+  --------------------------------------------------------------------------
+  data required time                                                 1.30
+  data arrival time                                                 -1.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

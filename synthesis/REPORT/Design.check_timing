@@ -1,0 +1,139 @@
+ 
+****************************************
+check_design summary:
+Version:     P-2019.03-SP5-4
+Date:        Sun Apr 25 11:35:14 2021
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     97
+    Unconnected ports (LINT-28)                                    47
+    Constant outputs (LINT-52)                                     50
+
+Cells                                                              12
+    Nets connected to multiple pins on same cell (LINT-33)         12
+--------------------------------------------------------------------------------
+
+Warning: In design 'fpfma_pipeline', port 'rnd[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpfma_pipeline', port 'rnd[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'C1big_1[47]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'C2big_1[47]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'C3big_1[47]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'C4big_1[47]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'C5big_1[47]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'C6big_1[47]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'C7big_1[47]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'C8big_1[47]' is not connected to any nets. (LINT-28)
+Warning: In design 'shifter', port 'C9big_1[47]' is not connected to any nets. (LINT-28)
+Warning: In design 'LZC', port 'in[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'LZC', port 'in[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'LZC', port 'in[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'LZC', port 'in[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'LZC', port 'in[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'LZC', port 'in[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'LZC', port 'in[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'LZC', port 'in[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'LZC', port 'in[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'LZC', port 'in[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'LZC', port 'in[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'LZC', port 'in[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'LZC', port 'in[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'LZC', port 'in[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpfma_pipeline_DW02_multp_0', port 'tc' is not connected to any nets. (LINT-28)
+Warning: In design 'fpfma_pipeline_DW02_multp_0', port 'out0[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpfma_pipeline_DW02_multp_1', port 'tc' is not connected to any nets. (LINT-28)
+Warning: In design 'fpfma_pipeline_DW02_multp_1', port 'out0[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpfma_pipeline_DW02_multp_2', port 'tc' is not connected to any nets. (LINT-28)
+Warning: In design 'fpfma_pipeline_DW02_multp_2', port 'out0[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpfma_pipeline_DW02_multp_3', port 'tc' is not connected to any nets. (LINT-28)
+Warning: In design 'fpfma_pipeline_DW02_multp_3', port 'out0[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpfma_pipeline_DW02_multp_4', port 'tc' is not connected to any nets. (LINT-28)
+Warning: In design 'fpfma_pipeline_DW02_multp_4', port 'out0[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpfma_pipeline_DW02_multp_5', port 'tc' is not connected to any nets. (LINT-28)
+Warning: In design 'fpfma_pipeline_DW02_multp_5', port 'out0[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpfma_pipeline_DW02_multp_6', port 'tc' is not connected to any nets. (LINT-28)
+Warning: In design 'fpfma_pipeline_DW02_multp_6', port 'out0[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpfma_pipeline_DW02_multp_7', port 'tc' is not connected to any nets. (LINT-28)
+Warning: In design 'fpfma_pipeline_DW02_multp_7', port 'out0[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'fpfma_pipeline_DW02_multp_8', port 'tc' is not connected to any nets. (LINT-28)
+Warning: In design 'fpfma_pipeline_DW02_multp_8', port 'out0[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'normalize_DW01_sub_0_DW01_sub_10', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'normalize_DW01_sub_0_DW01_sub_10', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'normalize_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'normalize_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'fpfma_pipeline', the same net is connected to more than one pin on submodule 'PACK7'. (LINT-33)
+   Net 'net852' is connected to pins 'A[31]', 'A[30]'', 'A[29]', 'A[28]', 'A[27]', 'A[26]', 'A[25]', 'A[24]', 'A[23]', 'A[22]', 'A[21]', 'A[20]', 'A[19]', 'A[18]', 'A[17]', 'A[16]', 'A[15]', 'A[14]', 'A[13]', 'A[12]', 'A[11]', 'A[10]', 'A[9]', 'A[8]', 'A[7]', 'A[6]', 'A[5]', 'A[4]', 'A[3]', 'A[2]', 'A[1]', 'A[0]', 'B[31]', 'B[30]', 'B[29]', 'B[28]', 'B[27]', 'B[26]', 'B[25]', 'B[24]', 'B[23]', 'B[22]', 'B[21]', 'B[20]', 'B[19]', 'B[18]', 'B[17]', 'B[16]', 'B[15]', 'B[14]', 'B[13]', 'B[12]', 'B[11]', 'B[10]', 'B[9]', 'B[8]', 'B[7]', 'B[6]', 'B[5]', 'B[4]', 'B[3]', 'B[2]', 'B[1]', 'B[0]'.
+Warning: In design 'fpfma_pipeline', the same net is connected to more than one pin on submodule 'pipe1'. (LINT-33)
+   Net 'net852' is connected to pins 'exp1[7]', 'exp1[6]'', 'exp1[5]', 'exp1[4]', 'exp1[3]', 'exp1[2]', 'exp1[1]', 'exp1[0]', 'shamt_c[5]', 'shamt_c[4]', 'shamt_c[3]', 'shamt_c[2]', 'shamt_c[1]', 'shamt_c[0]', 'shamt_ab1[5]', 'shamt_ab1[4]', 'shamt_ab1[3]', 'shamt_ab1[2]', 'shamt_ab1[1]', 'shamt_ab1[0]', 'shamt_ab2[5]', 'shamt_ab2[4]', 'shamt_ab2[3]', 'shamt_ab2[2]', 'shamt_ab2[1]', 'shamt_ab2[0]', 'shamt_ab3[5]', 'shamt_ab3[4]', 'shamt_ab3[3]', 'shamt_ab3[2]', 'shamt_ab3[1]', 'shamt_ab3[0]', 'shamt_ab4[5]', 'shamt_ab4[4]', 'shamt_ab4[3]', 'shamt_ab4[2]', 'shamt_ab4[1]', 'shamt_ab4[0]', 'shamt_ab5[5]', 'shamt_ab5[4]', 'shamt_ab5[3]', 'shamt_ab5[2]', 'shamt_ab5[1]', 'shamt_ab5[0]', 'shamt_ab6[5]', 'shamt_ab6[4]', 'shamt_ab6[3]', 'shamt_ab6[2]', 'shamt_ab6[1]', 'shamt_ab6[0]', 'shamt_ab7[5]', 'shamt_ab7[4]', 'shamt_ab7[3]', 'shamt_ab7[2]', 'shamt_ab7[1]', 'shamt_ab7[0]', 'shamt_ab8[5]', 'shamt_ab8[4]', 'shamt_ab8[3]', 'shamt_ab8[2]', 'shamt_ab8[1]', 'shamt_ab8[0]', 'shamt_ab9[5]', 'shamt_ab9[4]', 'shamt_ab9[3]', 'shamt_ab9[2]', 'shamt_ab9[1]', 'shamt_ab9[0]'.
+Warning: In design 'fpfma_pipeline', the same net is connected to more than one pin on submodule 'pipe2'. (LINT-33)
+   Net 'n6' is connected to pins 'pad_man_sum[78]', 'pad_man_sum[77]'', 'pad_man_sum[76]', 'pad_man_sum[75]', 'pad_man_sum[74]', 'pad_man_sum[73]', 'pad_man_sum[72]', 'pad_man_sum[71]', 'pad_man_sum[70]', 'pad_man_sum[69]', 'pad_man_sum[68]', 'pad_man_sum[67]', 'pad_man_sum[66]'.
+Warning: In design 'fpfma_pipeline', the same net is connected to more than one pin on submodule 'pipe2'. (LINT-33)
+   Net 'n5' is connected to pins 'pad_man_sum[65]', 'pad_man_sum[64]'', 'pad_man_sum[63]', 'pad_man_sum[62]', 'pad_man_sum[61]', 'pad_man_sum[60]', 'pad_man_sum[59]', 'pad_man_sum[58]', 'pad_man_sum[57]', 'pad_man_sum[56]', 'pad_man_sum[55]', 'pad_man_sum[54]', 'pad_man_sum[53]', 'pad_man_sum[52]'.
+Warning: In design 'fpfma_pipeline', the same net is connected to more than one pin on submodule 'pipe2'. (LINT-33)
+   Net 'n9' is connected to pins 'pad_man_carry[78]', 'pad_man_carry[77]'', 'pad_man_carry[76]', 'pad_man_carry[75]', 'pad_man_carry[74]', 'pad_man_carry[73]', 'pad_man_carry[72]', 'pad_man_carry[71]', 'pad_man_carry[70]', 'pad_man_carry[69]', 'pad_man_carry[68]', 'pad_man_carry[67]', 'pad_man_carry[66]'.
+Warning: In design 'fpfma_pipeline', the same net is connected to more than one pin on submodule 'pipe2'. (LINT-33)
+   Net 'n8' is connected to pins 'pad_man_carry[65]', 'pad_man_carry[64]'', 'pad_man_carry[63]', 'pad_man_carry[62]', 'pad_man_carry[61]', 'pad_man_carry[60]', 'pad_man_carry[59]', 'pad_man_carry[58]', 'pad_man_carry[57]', 'pad_man_carry[56]', 'pad_man_carry[55]', 'pad_man_carry[54]', 'pad_man_carry[53]', 'pad_man_carry[52]'.
+Warning: In design 'fpfma_pipeline', the same net is connected to more than one pin on submodule 'pipe3'. (LINT-33)
+   Net 'man_abc_pre[78]' is connected to pins 'man_abc_pre[78]', 'sign_eff''.
+Warning: In design 'adder_pp', the same net is connected to more than one pin on submodule 'SAD4'. (LINT-33)
+   Net 'n1' is connected to pins 'in2[0]', 'in4[0]'', 'in6[0]'.
+Warning: In design 'SAD_6_2', the same net is connected to more than one pin on submodule 'genblk1[0].m4'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'in[2]', 'in[0]''.
+Warning: In design 'SAD_6_SIG_WIDTH24', the same net is connected to more than one pin on submodule 'genblk1[0].m4'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'in[2]', 'in[0]''.
+Warning: In design 'SAD_6_0', the same net is connected to more than one pin on submodule 'genblk1[0].m4'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'in[2]', 'in[0]''.
+Warning: In design 'SAD_6_1', the same net is connected to more than one pin on submodule 'genblk1[0].m4'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'in[2]', 'in[0]''.
+Warning: In design 'adder_pp', output port 'result_9_man_carry[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'SAD_6_2', output port 'carry[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'SAD_6_SIG_WIDTH24', output port 'carry[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'SAD_6_0', output port 'carry[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'SAD_6_1', output port 'carry[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_0', output port 'out0[49]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_0', output port 'out1[49]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_0', output port 'out1[48]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_0', output port 'out1[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_0', output port 'out1[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_1', output port 'out0[49]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_1', output port 'out1[49]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_1', output port 'out1[48]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_1', output port 'out1[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_1', output port 'out1[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_2', output port 'out0[49]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_2', output port 'out1[49]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_2', output port 'out1[48]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_2', output port 'out1[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_2', output port 'out1[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_3', output port 'out0[49]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_3', output port 'out1[49]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_3', output port 'out1[48]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_3', output port 'out1[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_3', output port 'out1[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_4', output port 'out0[49]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_4', output port 'out1[49]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_4', output port 'out1[48]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_4', output port 'out1[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_4', output port 'out1[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_5', output port 'out0[49]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_5', output port 'out1[49]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_5', output port 'out1[48]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_5', output port 'out1[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_5', output port 'out1[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_6', output port 'out0[49]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_6', output port 'out1[49]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_6', output port 'out1[48]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_6', output port 'out1[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_6', output port 'out1[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_7', output port 'out0[49]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_7', output port 'out1[49]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_7', output port 'out1[48]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_7', output port 'out1[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_7', output port 'out1[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_8', output port 'out0[49]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_8', output port 'out1[49]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_8', output port 'out1[48]' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_8', output port 'out1[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'fpfma_pipeline_DW02_multp_8', output port 'out1[1]' is connected directly to 'logic 0'. (LINT-52)
+1

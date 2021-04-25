@@ -1,0 +1,16 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-f
+gatesim.f
+-define
+GATESIM
++access+wrc
+-disable_sem2009
+-top
+t_fpfma_pipeline
+-input
+irun.tcl
+-timescale
+1ns/1ps

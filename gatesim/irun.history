@@ -1,0 +1,1 @@
+s1(23Apr2021:10:14:40):  irun -f gatesim.f -define GATESIM +access+wrc -disable_sem2009 -top t_fpfma_pipeline -input irun.tcl -timescale 1ns/1ps 

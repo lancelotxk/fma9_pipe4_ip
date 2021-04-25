@@ -1,0 +1,11 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-ACCESS
++wrc
+-DISABLE_SEM2009
+
+t_fpfma_pipeline
+-timescale
+1ns/1ps

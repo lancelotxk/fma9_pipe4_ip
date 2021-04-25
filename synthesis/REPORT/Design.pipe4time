@@ -1,0 +1,274 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fpfma_pipeline
+Version: P-2019.03-SP5-4
+Date   : Sun Apr 25 11:36:00 2021
+****************************************
+
+Operating Conditions: ssg0p9v0c   Library: tcbn28hpcplusbwp12t30p140ssg0p9v0c
+Wire Load Model Mode: segmented
+
+  Startpoint: pipe3/man_abc_pre_p3_reg[2]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe4/result_p4_reg[30]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline3      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  complement_2       ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  complement_2_DW01_inc_0
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  LZC                ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_add_0
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline4      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                               0.00       0.00
+  clock network delay (propagated)                        0.02       0.02
+  pipe3/man_abc_pre_p3_reg[2]/CP (DFCNQOPTMAD8BWP12T30P140)
+                                                          0.00       0.02 r
+  pipe3/man_abc_pre_p3_reg[2]/Q (DFCNQOPTMAD8BWP12T30P140)
+                                                          0.02       0.05 f
+  pipe3/man_abc_pre_p3[2] (reg_pipeline3)                 0.00       0.05 f
+  comlement/in[2] (complement_2) <-                       0.00       0.05 f
+  comlement/U37/ZN (INVD4BWP12T30P140)                    0.01       0.05 r
+  comlement/add_0_root_add_6_ni/A[2] (complement_2_DW01_inc_0)
+                                                          0.00       0.05 r
+  comlement/add_0_root_add_6_ni/U1_1_2/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.07 r
+  comlement/add_0_root_add_6_ni/U1_1_3/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.09 r
+  comlement/add_0_root_add_6_ni/U1_1_4/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.11 r
+  comlement/add_0_root_add_6_ni/U66/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.11 f
+  comlement/add_0_root_add_6_ni/U67/ZN (INR2D4BWP12T30P140)
+                                                          0.01       0.12 r
+  comlement/add_0_root_add_6_ni/U113/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.13 f
+  comlement/add_0_root_add_6_ni/U112/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.13 r
+  comlement/add_0_root_add_6_ni/U1_1_8/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.15 r
+  comlement/add_0_root_add_6_ni/U92/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.16 f
+  comlement/add_0_root_add_6_ni/U91/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.16 r
+  comlement/add_0_root_add_6_ni/U1_1_10/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.18 r
+  comlement/add_0_root_add_6_ni/U95/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.19 f
+  comlement/add_0_root_add_6_ni/U94/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.20 r
+  comlement/add_0_root_add_6_ni/U29/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.20 f
+  comlement/add_0_root_add_6_ni/U28/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.21 r
+  comlement/add_0_root_add_6_ni/U9/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.21 f
+  comlement/add_0_root_add_6_ni/U8/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.22 r
+  comlement/add_0_root_add_6_ni/U116/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.23 f
+  comlement/add_0_root_add_6_ni/U115/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.23 r
+  comlement/add_0_root_add_6_ni/U1_1_15/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.25 r
+  comlement/add_0_root_add_6_ni/U1_1_16/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.27 r
+  comlement/add_0_root_add_6_ni/U1_1_17/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.29 r
+  comlement/add_0_root_add_6_ni/U1_1_18/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.31 r
+  comlement/add_0_root_add_6_ni/U1_1_19/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.32 r
+  comlement/add_0_root_add_6_ni/U1_1_20/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.34 r
+  comlement/add_0_root_add_6_ni/U57/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.35 f
+  comlement/add_0_root_add_6_ni/U58/ZN (INR2D4BWP12T30P140)
+                                                          0.01       0.36 r
+  comlement/add_0_root_add_6_ni/U41/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.36 f
+  comlement/add_0_root_add_6_ni/U42/ZN (INR2D4BWP12T30P140)
+                                                          0.01       0.37 r
+  comlement/add_0_root_add_6_ni/U6/ZN (CKND2D4BWP12T30P140)
+                                                          0.01       0.38 f
+  comlement/add_0_root_add_6_ni/U1/Z (OR3XD8BWP12T30P140)
+                                                          0.02       0.40 f
+  comlement/add_0_root_add_6_ni/U23/ZN (INVD3BWP12T30P140)
+                                                          0.01       0.41 r
+  comlement/add_0_root_add_6_ni/U1_1_28/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.43 r
+  comlement/add_0_root_add_6_ni/U1_1_29/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.44 r
+  comlement/add_0_root_add_6_ni/U1_1_30/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.46 r
+  comlement/add_0_root_add_6_ni/U1_1_31/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.48 r
+  comlement/add_0_root_add_6_ni/U108/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.49 f
+  comlement/add_0_root_add_6_ni/U107/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.49 r
+  comlement/add_0_root_add_6_ni/U26/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.50 f
+  comlement/add_0_root_add_6_ni/U25/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.51 r
+  comlement/add_0_root_add_6_ni/U1_1_34/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.52 r
+  comlement/add_0_root_add_6_ni/U1_1_35/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.54 r
+  comlement/add_0_root_add_6_ni/U80/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.55 f
+  comlement/add_0_root_add_6_ni/U81/ZN (INR2D4BWP12T30P140)
+                                                          0.01       0.56 r
+  comlement/add_0_root_add_6_ni/U1_1_38/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.57 r
+  comlement/add_0_root_add_6_ni/U71/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.58 f
+  comlement/add_0_root_add_6_ni/U72/ZN (INR2D4BWP12T30P140)
+                                                          0.01       0.59 r
+  comlement/add_0_root_add_6_ni/U1_1_41/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.61 r
+  comlement/add_0_root_add_6_ni/U1_1_42/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.63 r
+  comlement/add_0_root_add_6_ni/U1_1_43/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.64 r
+  comlement/add_0_root_add_6_ni/U60/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.65 f
+  comlement/add_0_root_add_6_ni/U61/ZN (INR2D4BWP12T30P140)
+                                                          0.01       0.66 r
+  comlement/add_0_root_add_6_ni/U1_1_46/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.68 r
+  comlement/add_0_root_add_6_ni/U1_1_47/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.70 r
+  comlement/add_0_root_add_6_ni/U105/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.70 f
+  comlement/add_0_root_add_6_ni/U104/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.71 r
+  comlement/add_0_root_add_6_ni/U1_1_49/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.73 r
+  comlement/add_0_root_add_6_ni/U1_1_50/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.75 r
+  comlement/add_0_root_add_6_ni/U1_1_51/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.76 r
+  comlement/add_0_root_add_6_ni/U1_1_52/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.78 r
+  comlement/add_0_root_add_6_ni/U1_1_53/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.80 r
+  comlement/add_0_root_add_6_ni/U21/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.81 f
+  comlement/add_0_root_add_6_ni/U20/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.81 r
+  comlement/add_0_root_add_6_ni/U12/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.82 f
+  comlement/add_0_root_add_6_ni/U11/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.83 r
+  comlement/add_0_root_add_6_ni/U1_1_56/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.84 r
+  comlement/add_0_root_add_6_ni/U74/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.85 f
+  comlement/add_0_root_add_6_ni/U75/ZN (INR2D4BWP12T30P140)
+                                                          0.01       0.86 r
+  comlement/add_0_root_add_6_ni/U1_1_59/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.88 r
+  comlement/add_0_root_add_6_ni/U101/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.88 f
+  comlement/add_0_root_add_6_ni/U100/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.89 r
+  comlement/add_0_root_add_6_ni/U1_1_61/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.91 r
+  comlement/add_0_root_add_6_ni/U85/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.91 f
+  comlement/add_0_root_add_6_ni/U84/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.92 r
+  comlement/add_0_root_add_6_ni/U15/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.93 f
+  comlement/add_0_root_add_6_ni/U14/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.93 r
+  comlement/add_0_root_add_6_ni/U1_1_64/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.95 r
+  comlement/add_0_root_add_6_ni/U1_1_65/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.97 r
+  comlement/add_0_root_add_6_ni/U18/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.98 f
+  comlement/add_0_root_add_6_ni/U17/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.98 r
+  comlement/add_0_root_add_6_ni/U1_1_67/CO (HA1D4BWP12T30P140)
+                                                          0.02       1.00 r
+  comlement/add_0_root_add_6_ni/U1_1_68/CO (HA1D4BWP12T30P140)
+                                                          0.02       1.02 r
+  comlement/add_0_root_add_6_ni/U1_1_69/CO (HA1D4BWP12T30P140)
+                                                          0.02       1.04 r
+  comlement/add_0_root_add_6_ni/U1_1_70/CO (HA1D4BWP12T30P140)
+                                                          0.02       1.06 r
+  comlement/add_0_root_add_6_ni/U98/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       1.06 f
+  comlement/add_0_root_add_6_ni/U97/ZN (INVD4BWP12T30P140)
+                                                          0.01       1.07 r
+  comlement/add_0_root_add_6_ni/U1_1_72/CO (HA1D4BWP12T30P140)
+                                                          0.02       1.09 r
+  comlement/add_0_root_add_6_ni/U1_1_73/CO (HA1D4BWP12T30P140)
+                                                          0.02       1.10 r
+  comlement/add_0_root_add_6_ni/U1_1_74/CO (HA1D4BWP12T30P140)
+                                                          0.02       1.12 r
+  comlement/add_0_root_add_6_ni/U1_1_75/CO (HA1D4BWP12T30P140)
+                                                          0.02       1.14 r
+  comlement/add_0_root_add_6_ni/U1_1_76/CO (HA1D4BWP12T30P140)
+                                                          0.02       1.16 r
+  comlement/add_0_root_add_6_ni/U1_1_77/S (HA1D1BWP12T30P140)
+                                                          0.02       1.18 f
+  comlement/add_0_root_add_6_ni/SUM[77] (complement_2_DW01_inc_0)
+                                                          0.00       1.18 f
+  comlement/out[77] (complement_2) <-                     0.00       1.18 f
+  U97/ZN (MOAI22D2BWP12T30P140)                           0.02       1.20 f
+  lzc/in[77] (LZC)                                        0.00       1.20 f
+  lzc/U99/ZN (NR3OPTPAD2BWP12T30P140)                     0.01       1.21 r
+  lzc/U80/ZN (CKND2BWP12T30P140)                          0.01       1.22 f
+  lzc/U79/ZN (NR4D1BWP12T30P140)                          0.01       1.23 r
+  lzc/U97/ZN (INVD1P25BWP12T30P140)                       0.01       1.23 f
+  lzc/U106/ZN (NR4D1BWP12T30P140)                         0.01       1.24 r
+  lzc/U103/Z (BUFFD4BWP12T30P140)                         0.02       1.26 r
+  lzc/num[6] (LZC)                                        0.00       1.26 r
+  normalize_shift/num[6] (normalize)                      0.00       1.26 r
+  normalize_shift/U82/ZN (CKND6BWP12T30P140)              0.01       1.27 f
+  normalize_shift/U83/Z (XOR2OPTND6BWP12T30P140)          0.01       1.28 f
+  normalize_shift/add_20/B[6] (normalize_DW01_add_0)      0.00       1.28 f
+  normalize_shift/add_20/U1_6/CO (FA1D1BWP12T30P140)      0.03       1.31 f
+  normalize_shift/add_20/U1_7/Z (XOR3OPTND2BWP12T30P140)
+                                                          0.03       1.34 r
+  normalize_shift/add_20/SUM[7] (normalize_DW01_add_0)
+                                                          0.00       1.34 r
+  normalize_shift/U23/ZN (ND2D1BWP12T30P140)              0.01       1.35 f
+  normalize_shift/U87/ZN (ND2D2BWP12T30P140)              0.01       1.36 r
+  normalize_shift/exp[7] (normalize)                      0.00       1.36 r
+  pipe4/result[30] (reg_pipeline4)                        0.00       1.36 r
+  pipe4/result_p4_reg[30]/D (DFCNQOPTSADD8BWP12T30P140)
+                                                          0.00       1.36 r
+  data arrival time                                                  1.36
+
+  clock clk_DQS (rise edge)                               1.25       1.25
+  clock network delay (propagated)                        0.06       1.31
+  pipe4/result_p4_reg[30]/CP (DFCNQOPTSADD8BWP12T30P140)
+                                                          0.00       1.31 r
+  library setup time                                      0.05       1.36
+  data required time                                                 1.36
+  --------------------------------------------------------------------------
+  data required time                                                 1.36
+  data arrival time                                                 -1.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

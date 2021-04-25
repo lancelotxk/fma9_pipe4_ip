@@ -1,0 +1,117 @@
+irun(64): 15.20-p001: (c) Copyright 1995-2016 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-p001: Started on Apr 23, 2021 at 10:04:12 CST
+irun
+	-f rtlsim.f
+		../src/verilog/unpack.v
+		../src/verilog/adder_pp.v
+		../src/verilog/adder.v
+		../src/verilog/align.v
+		../src/verilog/complemmet_c.v
+		../src/verilog/compress3_2.v
+		../src/verilog/compress4_2.v
+		../src/verilog/compress6_2.v
+		../src/verilog/compressor3_2_group.v
+		../src/verilog/my_multp.v
+		../src/verilog/exponentComparison.v
+		../src/verilog/SAD_6_v2.v
+		../src/verilog/LZC.v
+		../src/verilog/normalize.v
+		../src/verilog/SAD_6.v
+		../src/verilog/shifter.v
+		../src/verilog/fpfma_pipeline.v
+		../src/verilog/CLA_adder.v
+		../src/verilog/carry_select_adder.v
+		../src/testbench/t_fpfma_pipeline.v
+	+access+wrc
+	-timescale 1ns/1ps
+	+incdir+../src/verilog
+	-top t_fpfma_pipeline
+file: ../src/verilog/unpack.v
+	module worklib.unpack:v
+		errors: 0, warnings: 0
+file: ../src/verilog/adder_pp.v
+	module worklib.adder_pp:v
+		errors: 0, warnings: 0
+file: ../src/verilog/adder.v
+	module worklib.ahead_adder:v
+		errors: 0, warnings: 0
+	module worklib.adder:v
+		errors: 0, warnings: 0
+file: ../src/verilog/align.v
+	module worklib.align:v
+		errors: 0, warnings: 0
+file: ../src/verilog/complemmet_c.v
+	module worklib.com_c:v
+		errors: 0, warnings: 0
+file: ../src/verilog/compress3_2.v
+	module worklib.compress3_2:v
+		errors: 0, warnings: 0
+file: ../src/verilog/compress4_2.v
+	module worklib.compress4_2:v
+		errors: 0, warnings: 0
+file: ../src/verilog/compress6_2.v
+	module worklib.compress6_2:v
+		errors: 0, warnings: 0
+file: ../src/verilog/compressor3_2_group.v
+	module worklib.compressor3_2_group:v
+		errors: 0, warnings: 0
+file: ../src/verilog/my_multp.v
+	module worklib.my_multp:v
+		errors: 0, warnings: 0
+file: ../src/verilog/exponentComparison.v
+	module worklib.exponentComparison:v
+		errors: 0, warnings: 0
+file: ../src/verilog/SAD_6_v2.v
+	module worklib.SAD_6_v2:v
+		errors: 0, warnings: 0
+file: ../src/verilog/LZC.v
+	module worklib.LZC:v
+		errors: 0, warnings: 0
+file: ../src/verilog/normalize.v
+	module worklib.normalize:v
+		errors: 0, warnings: 0
+file: ../src/verilog/SAD_6.v
+	module worklib.SAD_6:v
+		errors: 0, warnings: 0
+file: ../src/verilog/shifter.v
+	module worklib.shifter:v
+		errors: 0, warnings: 0
+file: ../src/verilog/fpfma_pipeline.v
+	module worklib.fpfma_pipeline:v
+		errors: 0, warnings: 0
+	module worklib.reg_pipeline1:v
+		errors: 0, warnings: 0
+	module worklib.reg_pipeline2:v
+		errors: 0, warnings: 0
+	module worklib.reg_pipeline3:v
+		errors: 0, warnings: 0
+	module worklib.reg_pipeline4:v
+		errors: 0, warnings: 0
+file: ../src/verilog/CLA_adder.v
+	module worklib.CLA_adder:v
+		errors: 0, warnings: 0
+file: ../src/verilog/carry_select_adder.v
+	module worklib.carry_select_adder:v
+		errors: 0, warnings: 0
+file: ../src/testbench/t_fpfma_pipeline.v
+      $fscanf(fd, "%x %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x", A1,A2,A3,A4,A5,A6,A7,A8,A9,B1,B2,B3,B4,B5,B6,B7,B8,B9,C, x_ideal);
+            |
+ncvlog: *W,NOSYST (../src/testbench/t_fpfma_pipeline.v,48|12): System function '$fscanf' invoked as a task. Return value will be ignored.
+	module worklib.t_fpfma_pipeline:v
+		errors: 0, warnings: 1
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+unpack PACK7(.A(),.B(),.C(C_r),.aSign(), .aExp(), .aSig(),.bSign(), .bExp(), .bSig(),.cSign(cSign), .cExp(cExp), 
+           |
+ncelab: *W,CUVWSP (../src/verilog/fpfma_pipeline.v,100|11): 2 output ports were not connected:
+ncelab: (../src/verilog/unpack.v,3): aiszero
+ncelab: (../src/verilog/unpack.v,3): biszero
+
+DW02_multp #(.a_width(24),.b_width(24),.out_width(50)) multp_1(.a(a1Sig),.b(b1Sig),.tc(1'b0),.out0(S1big_1),.out1(C1big_1) ); 
+                                                             |
+ncelab: *E,CUVMUR (../src/verilog/fpfma_pipeline.v,127|61): instance 't_fpfma_pipeline.UUT@fpfma_pipeline<module>.multp_1' of design unit 'DW02_multp' is unresolved in 'worklib.fpfma_pipeline:v'.
+complement_2 comlement (man_abc_pre,man_abc_pre_com);
+                     |
+ncelab: *E,CUVMUR (../src/verilog/fpfma_pipeline.v,221|21): instance 't_fpfma_pipeline.UUT@fpfma_pipeline<module>.comlement' of design unit 'complement_2' is unresolved in 'worklib.fpfma_pipeline:v'.
+irun: *E,ELBERR: Error during elaboration (status 1), exiting.
+TOOL:	irun(64)	15.20-p001: Exiting on Apr 23, 2021 at 10:04:13 CST  (total: 00:00:01)

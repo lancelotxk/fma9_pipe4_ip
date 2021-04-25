@@ -1,0 +1,278 @@
+ 
+****************************************
+Report : constraint
+        -verbose
+Design : fpfma_pipeline
+Version: P-2019.03-SP5-4
+Date   : Sun Apr 25 11:35:14 2021
+****************************************
+
+
+  Startpoint: pipe1/shamt_ab4_p1_reg[0]/CP
+              (internal path startpoint clocked by clk_DQS)
+  Endpoint: pipe2/pad_man_carry_p2_reg[65]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline1      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  shifter            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_5            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_5_DW01_inc_0_DW01_inc_4
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_227    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_0            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  adder_pp           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_221    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_216    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_6      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_10     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_SIG_WIDTH24  ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_9      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_4      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                               0.00       0.00
+  clock network delay (propagated)                        0.07       0.07
+  input external delay                                    0.00       0.07 r
+  pipe1/shamt_ab4_p1_reg[0]/CP (DFCNQOPTMAD8BWP12T30P140)
+                                                          0.00       0.07 r
+  pipe1/shamt_ab4_p1_reg[0]/Q (DFCNQOPTMAD8BWP12T30P140)
+                                                          0.03       0.10 r
+  mul_shift/U2/ZN (CKND6BWP12T30P140)                     0.01       0.11 f
+  mul_shift/U1041/ZN (INVD12BWP12T30P140)                 0.01       0.12 r
+  mul_shift/U1644/Z (CKMUX2D8BWP12T30P140)                0.03       0.15 f
+  mul_shift/U4112/Z (MUX3D0BWP12T30P140)                  0.02       0.17 f
+  mul_shift/U1757/ZN (MUX3ND0BWP12T30P140)                0.03       0.20 r
+  mul_shift/U1764/ZN (MUX3ND0BWP12T30P140)                0.04       0.24 f
+  mul_shift/u4/U7/ZN (INVD2BWP12T30P140)                  0.02       0.26 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_1/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.28 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_2/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.30 r
+  mul_shift/u4/add_0_root_add_10_ni/U34/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.30 f
+  mul_shift/u4/add_0_root_add_10_ni/U33/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.31 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_4/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.33 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_5/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.35 r
+  mul_shift/u4/add_0_root_add_10_ni/U17/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.35 f
+  mul_shift/u4/add_0_root_add_10_ni/U16/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.36 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_7/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.38 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_8/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.40 r
+  mul_shift/u4/add_0_root_add_10_ni/U45/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.40 f
+  mul_shift/u4/add_0_root_add_10_ni/U44/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.41 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_10/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.43 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_11/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.45 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_12/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.46 r
+  mul_shift/u4/add_0_root_add_10_ni/U14/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.47 f
+  mul_shift/u4/add_0_root_add_10_ni/U13/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.48 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_14/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.50 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_15/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.52 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_16/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.53 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_17/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.55 r
+  mul_shift/u4/add_0_root_add_10_ni/U42/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.56 f
+  mul_shift/u4/add_0_root_add_10_ni/U41/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.57 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_19/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.58 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_20/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.60 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_21/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.62 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_22/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.64 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_23/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.66 r
+  mul_shift/u4/add_0_root_add_10_ni/U31/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.67 f
+  mul_shift/u4/add_0_root_add_10_ni/U30/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.67 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_25/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.69 r
+  mul_shift/u4/add_0_root_add_10_ni/U39/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.70 f
+  mul_shift/u4/add_0_root_add_10_ni/U1/ZN (NR4D4BWP12T30P140)
+                                                          0.01       0.71 r
+  mul_shift/u4/add_0_root_add_10_ni/U4/ZN (DCCKND4BWP12T30P140)
+                                                          0.01       0.72 f
+  mul_shift/u4/add_0_root_add_10_ni/U25/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.72 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_30/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.74 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_31/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.76 r
+  mul_shift/u4/add_0_root_add_10_ni/U37/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.77 f
+  mul_shift/u4/add_0_root_add_10_ni/U36/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.77 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_33/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.79 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_34/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.81 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_35/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.83 r
+  mul_shift/u4/add_0_root_add_10_ni/U8/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.84 f
+  mul_shift/u4/add_0_root_add_10_ni/U7/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.84 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_37/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.86 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_38/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.88 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_39/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.90 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_40/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.92 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_41/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.94 r
+  mul_shift/u4/add_0_root_add_10_ni/U11/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.94 f
+  mul_shift/u4/add_0_root_add_10_ni/U10/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.95 r
+  mul_shift/u4/add_0_root_add_10_ni/U28/ZN (ND2OPTFAD4BWP12T30P140)
+                                                          0.01       0.95 f
+  mul_shift/u4/add_0_root_add_10_ni/U27/ZN (INVD4BWP12T30P140)
+                                                          0.01       0.96 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_44/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.98 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_45/CO (HA1D4BWP12T30P140)
+                                                          0.02       0.99 r
+  mul_shift/u4/add_0_root_add_10_ni/U1_1_46/S (HA1D1BWP12T30P140)
+                                                          0.02       1.01 f
+  mul_shift/U1950/ZN (MOAI22D2BWP12T30P140)               0.02       1.03 f
+  add/SAD3/genblk1[47].m1/U1/ZN (MAOI222D1BWP12T30P140)
+                                                          0.02       1.05 r
+  add/SAD3/genblk1[47].m1/U2/ZN (INVD1P75BWP12T30P140)
+                                                          0.01       1.07 f
+  add/SAD3/genblk1[48].m3/U5/Z (XOR2OPTND8BWP12T30P140)
+                                                          0.02       1.09 r
+  add/SAD3/genblk1[48].m3/U6/Z (AO22XD8BWP12T30P140)      0.02       1.11 r
+  add/SAD3/genblk1[49].m4/U5/Z (XOR2OPTND8BWP12T30P140)
+                                                          0.02       1.14 r
+  add/SAD3/genblk1[49].m4/U3/Z (AO22XD16BWP12T30P140)     0.03       1.16 r
+  add/SAD4/genblk1[50].m2/U3/Z (XOR2OPTND8BWP12T30P140)
+                                                          0.02       1.18 f
+  add/SAD4/genblk1[50].m2/U1/Z (XOR2OPTND8BWP12T30P140)
+                                                          0.02       1.20 r
+  add/SAD4/genblk1[50].m3/U1/ZN (MAOI222D1BWP12T30P140)
+                                                          0.02       1.22 f
+  add/SAD4/genblk1[50].m3/U2/ZN (INVD2BWP12T30P140)       0.02       1.24 r
+  add/SAD4/genblk1[51].m4/U1/ZN (MAOI222D1BWP12T30P140)
+                                                          0.02       1.27 f
+  add/SAD4/genblk1[51].m4/U2/ZN (INVD2BWP12T30P140)       0.02       1.29 r
+  U88/ZN (DCCKND16BWP12T30P140)                           0.01       1.30 f
+  U87/ZN (INVD18BWP12T30P140)                             0.01       1.30 r
+  pipe2/pad_man_carry_p2_reg[65]/D (DFCNOPTSADD8BWP12T30P140)
+                                                          0.00       1.30 r
+  data arrival time                                                  1.30
+
+  clock clk_DQS (rise edge)                               1.25       1.25
+  clock network delay (propagated)                        0.03       1.28
+  pipe2/pad_man_carry_p2_reg[65]/CP (DFCNOPTSADD8BWP12T30P140)
+                                                          0.00       1.28 r
+  library setup time                                      0.03       1.30
+  data required time                                                 1.30
+  --------------------------------------------------------------------------
+  data required time                                                 1.30
+  data arrival time                                                 -1.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: C_r_reg[7] (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe1/cSig_p1_reg[7]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SNPS_CLOCK_GATE_HIGH_reg_pipeline4
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline4      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline3      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline1      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  unpack_0           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                               0.00       0.00
+  clock network delay (propagated)                        0.00       0.00
+  C_r_reg[7]/CP (DFCNQOPTSADD8BWP12T30P140)               0.00       0.00 r
+  C_r_reg[7]/Q (DFCNQOPTSADD8BWP12T30P140)                0.06       0.06 r
+  PACK7/U116/Z (BUFFXD16BWP12T30P140)                     0.01       0.07 r
+  pipe1/cSig_p1_reg[7]/D (DFCNQOPTSADD8BWP12T30P140)      0.00       0.07 r
+  data arrival time                                                  0.07
+
+  clock clk_DQS (rise edge)                               0.00       0.00
+  clock network delay (propagated)                        0.07       0.07
+  pipe1/cSig_p1_reg[7]/CP (DFCNQOPTSADD8BWP12T30P140)     0.00       0.07 r
+  library hold time                                       0.07       0.14
+  data required time                                                 0.14
+  --------------------------------------------------------------------------
+  data required time                                                 0.14
+  data arrival time                                                 -0.07
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.07
+
+
+    Net: normalize_shift/n317
+
+    max_transition         0.10
+  - Transition Time        0.10
+  ------------------------------
+    Slack                  0.00  (MET)
+
+
+    Net: lzc/n1
+
+    max_capacitance        0.01
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.01  (MET)
+
+
+    Net: lzc/sel1[2]
+
+    Capacitance            0.00
+  - min_capacitance        0.00
+  ------------------------------
+    Slack                  0.00  (MET)
+
+
+Min pulse width constraints
+
+                       Required      Actual
+  Pin                pulse width   pulse width   Slack           Scenario
+--------------------------------------------------------------------------------
+  pipe4/result_p4_reg[31]/CP(high)
+                      0.13          0.62          0.49 (MET)
+
+1
